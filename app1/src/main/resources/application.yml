@@ -1,6 +1,10 @@
 message:
   source: "test"
 
+logging:
+  level:
+    ROOT: DEBUG
+
 management.endpoints.web.exposure.include: '*'
 spring:
   application:
