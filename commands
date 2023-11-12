@@ -1,0 +1,8 @@
+curl -X POST localhost:8081/actuator/refresh && curl -X POST localhost:8080/actuator/refresh
+
+git commit -am "2"
+
+watch -n 1 curl -s localhost:8080/message
+watch -n 1 curl -s localhost:8081/message
+
+curl -X POST localhost:8080/actuator/busrefresh

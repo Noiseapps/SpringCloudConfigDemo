@@ -1,0 +1,17 @@
+message:
+  source: "test"
+
+management.endpoints.web.exposure.include: '*'
+spring:
+  application:
+    name: app1
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    bus:
+      refresh:
+        enabled: true
+      enabled: true
