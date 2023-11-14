@@ -5,7 +5,7 @@ server:
 management.endpoints.web.exposure.include: '*'
 
 message:
-  source: "test"
+  source: "App2 initial value"
 
 spring:
   rabbitmq:

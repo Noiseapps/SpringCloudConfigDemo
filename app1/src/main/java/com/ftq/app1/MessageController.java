@@ -6,12 +6,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RefreshScope
 public class MessageController {
-    private final String messageSource;
 
-    public MessageController(@Value("${message.source}") String messageSource) {
-        this.messageSource = messageSource;
-    }
+    @Value("${message.source}")
+    private String messageSource;
 
     @GetMapping("/message")
     public String getMessage() {

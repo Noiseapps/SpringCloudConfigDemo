@@ -1,9 +1,9 @@
 message:
-  source: "test"
+  source: "App1 initial value"
 
 logging:
   level:
-    ROOT: DEBUG
+    ROOT: INFO
 
 management.endpoints.web.exposure.include: '*'
 spring:

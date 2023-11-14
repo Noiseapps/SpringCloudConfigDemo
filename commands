@@ -6,3 +6,5 @@ watch -n 1 curl -s localhost:8080/message
 watch -n 1 curl -s localhost:8081/message
 
 curl -X POST localhost:8080/actuator/busrefresh
+
+curl -X GET localhost:8888/app1/default

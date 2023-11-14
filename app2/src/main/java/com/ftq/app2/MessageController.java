@@ -12,10 +12,6 @@ public class MessageController {
     @Value("${message.source}")
     private String messageSource;
 
-//    public MessageController(@Value("${message.source}") String messageSource) {
-//        this.messageSource = messageSource;
-//    }
-
     @GetMapping("/message")
     public String getMessage() {
         return messageSource;
